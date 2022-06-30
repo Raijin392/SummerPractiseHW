@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="enterField">270dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="marginTopOfEnterFields">16dp</dimen>
+    <dimen name="marginTopOfParent">16dp</dimen>
+    <dimen name="marginTopForButton">16dp</dimen>
+    <dimen name="marginTopForTextResult">50dp</dimen>
+
+</resources>
