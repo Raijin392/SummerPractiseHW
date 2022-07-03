@@ -5,6 +5,6 @@ data class Music(
     val name: String,
     val performer: String,
     val duration: String,
-    val image: String,
+    val гкд: String,
 )
 
