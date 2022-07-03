@@ -27,4 +27,10 @@ class FashionFragment : Fragment(R.layout.fragment_fashion) {
             }
         }
     }
+
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
+    }
+
 }

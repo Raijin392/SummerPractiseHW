@@ -14,7 +14,9 @@
         android:label="CameraFragment" >
         <action
             android:id="@+id/action_cameraFragment_to_unknownFragment2"
-            app:destination="@id/unknownFragment" />
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/cameraFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/cassetteFragment"
@@ -22,7 +24,9 @@
         android:label="CassetteFragment" >
         <action
             android:id="@+id/action_cassetteFragment_to_unknownFragment"
-            app:destination="@id/unknownFragment" />
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/cassetteFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/fashionFragment"
@@ -30,7 +34,9 @@
         android:label="FashionFragment" >
         <action
             android:id="@+id/action_fashionFragment_to_unknownFragment"
-            app:destination="@id/unknownFragment" />
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/fashionFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/headphonesFragment"
@@ -38,7 +44,9 @@
         android:label="HeadphonesFragment" >
         <action
             android:id="@+id/action_headphonesFragment_to_unknownFragment"
-            app:destination="@id/unknownFragment" />
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/headphonesFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/musicFragment"
@@ -46,6 +54,8 @@
         android:label="MusicFragment" >
         <action
             android:id="@+id/action_musicFragment_to_unknownFragment"
-            app:destination="@id/unknownFragment" />
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/musicFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 </navigation>

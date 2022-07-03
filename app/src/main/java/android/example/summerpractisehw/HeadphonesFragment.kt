@@ -27,4 +27,10 @@ class HeadphonesFragment : Fragment(R.layout.fragment_headphones) {
             }
         }
     }
+
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
+    }
+
 }

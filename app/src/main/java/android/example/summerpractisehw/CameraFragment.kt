@@ -26,4 +26,10 @@ class CameraFragment : Fragment(R.layout.fragment_camera) {
             }
         }
     }
+
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
+    }
+
 }

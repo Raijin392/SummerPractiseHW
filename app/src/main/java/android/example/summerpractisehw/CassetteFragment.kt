@@ -26,4 +26,10 @@ class CassetteFragment : Fragment(R.layout.fragment_cassette) {
             }
         }
     }
+
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
+    }
+
 }
