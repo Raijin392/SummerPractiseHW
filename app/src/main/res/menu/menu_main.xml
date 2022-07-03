@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fashionFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_fashion"
+        android:title="@string/label_fashion"/>
+
+    <item
+        android:id="@+id/cassetteFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_cassette"
+        android:title="@string/label_cassette"/>
+
+    <item
+        android:id="@+id/headphonesFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_headphones"
+        android:title="@string/label_headphones"/>
+
+    <item
+        android:id="@+id/cameraFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_camera"
+        android:title="@string/label_camera"/>
+
+    <item
+        android:id="@+id/musicFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_music"
+        android:title="@string/label_music"/>
+
+</menu>
