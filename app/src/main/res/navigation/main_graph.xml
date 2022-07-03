@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_grpah"
+    app:startDestination="@id/fashionFragment">
+
+    <fragment
+        android:id="@+id/unknownFragment"
+        android:name="android.example.summerpractisehw.UnknownFragment"
+        android:label="UnknownFragment" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="android.example.summerpractisehw.CameraFragment"
+        android:label="CameraFragment" >
+        <action
+            android:id="@+id/action_cameraFragment_to_unknownFragment2"
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/cameraFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cassetteFragment"
+        android:name="android.example.summerpractisehw.CassetteFragment"
+        android:label="CassetteFragment" >
+        <action
+            android:id="@+id/action_cassetteFragment_to_unknownFragment"
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/cassetteFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fashionFragment"
+        android:name="android.example.summerpractisehw.FashionFragment"
+        android:label="FashionFragment" >
+        <action
+            android:id="@+id/action_fashionFragment_to_unknownFragment"
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/fashionFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/headphonesFragment"
+        android:name="android.example.summerpractisehw.HeadphonesFragment"
+        android:label="HeadphonesFragment" >
+        <action
+            android:id="@+id/action_headphonesFragment_to_unknownFragment"
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/headphonesFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="android.example.summerpractisehw.MusicFragment"
+        android:label="MusicFragment" >
+        <action
+            android:id="@+id/action_musicFragment_to_unknownFragment"
+            app:destination="@id/unknownFragment"
+            app:popUpTo="@id/musicFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

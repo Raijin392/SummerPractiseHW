@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fragment_image_size">100dp</dimen>
+    <dimen name="fragment_text_size">25sp</dimen>
+    <dimen name="margin_top_for_textview_in_fragment">16dp</dimen>
+    <dimen name="margin_top_for_button_in_fragment">100dp</dimen>
+
+</resources>
