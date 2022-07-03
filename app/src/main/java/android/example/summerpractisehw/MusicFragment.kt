@@ -4,6 +4,8 @@ import android.example.summerpractisehw.databinding.FragmentMusicBinding
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.bumptech.glide.Glide
 import com.google.android.material.snackbar.Snackbar
 
 class MusicFragment : Fragment(R.layout.fragment_music) {
@@ -15,11 +17,17 @@ class MusicFragment : Fragment(R.layout.fragment_music) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding= FragmentMusicBinding.bind(view)
+        initAdapt()
 
-        adapter = MusicAdapter(MusicRepository.musics) {
-            Snackbar.make(binding.root, "Music id: ${it.id}", Snackbar.LENGTH_SHORT).show()
+    }
+
+    private fun initAdapt() {
+        adapter = MusicAdapter(MusicRepository.musics, Glide.with(this)) {
+            val action = MusicFragmentDirections.actionMusicFragmentToMusicFragmentInformation(it.id)
+            binding.root.findNavController().navigate(action)
         }
         binding.rvMusic.adapter = adapter
+
     }
 
     override fun onDestroyView() {

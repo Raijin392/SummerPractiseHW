@@ -4,9 +4,12 @@ import android.example.summerpractisehw.databinding.ItemMusicBinding
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.RequestManager
 
 class MusicAdapter(
     private val list: List<Music>,
+    private var glide: RequestManager,
     private val onItemClick: (Music) -> Unit
 ) : RecyclerView.Adapter<MusicHolder>() {
 
@@ -19,7 +22,8 @@ class MusicAdapter(
             parent,
             false
         ),
-        onItemClick
+        glide = glide,
+        onItemClick = onItemClick
     )
 
     override fun onBindViewHolder(
